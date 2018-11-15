@@ -19,12 +19,16 @@ const createTemplateParams = {
     name: 'Vue框架模板',
     createTime: date,
     updateTime: date,
+    files: '/1/pipeline-template.zip',
+    thumbnail: 'https://avatars3.githubusercontent.com/u/6128107',
   },
   payload2: {
     id: 2,
     name: 'React框架模板',
     createTime: date,
     updateTime: date,
+    files: '/2/pipeline-template.zip',
+    thumbnail: 'https://avatars0.githubusercontent.com/u/6412038',
   },
 };
 
