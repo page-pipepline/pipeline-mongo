@@ -1,18 +1,11 @@
-# mongoDB in docker
-在 docker 中运行 mongoDB, 并将数据库数据保存在 host 中.
+# pipeline-mongo
+> 页面可视化搭建框架的 mongo 数据库
 
 ## 执行环境
-* docker
-```
-$ docker --version
-Docker version 17.06.1-ce, build 874a737
-```
+在 docker 中运行 mongoDB, 并将数据库数据保存在 host 中.
 
+* docker
 * docker-compose
-```
-$ docker-compose --version
-docker-compose version 1.16.0, build ea60ca1
-```
 
 ## 业务环境
 * mongoDB:3.4.7
@@ -26,6 +19,7 @@ $ docker-compose up
 ```
 
 ## 开发模式
+
 ### 执行
 ```shell
 $ docker-compose -f docker-compose.dev.yml up --build --force-recreate
@@ -114,10 +108,6 @@ mongoose.connect('mongodb://user:pass@host:27017/db?authSource=databaseName')
 // or
 mongoose.connect(uri, { auth: { authSource: 'databaseName' }})
 ```
-
-## TODO
-* [ ] seed shell script retry seed mongoDB when conection timeout
-* [ ] add error control for create user
 
 ## References
 * dockerfile 官方文档
