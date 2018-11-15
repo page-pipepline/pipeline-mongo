@@ -15,7 +15,7 @@
 
 ## 生产执行
 ```
-$ docker-compose up
+$ docker-compose up -d # 后台启动
 ```
 
 ## 开发模式
